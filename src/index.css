@@ -90,3 +90,26 @@ button {
   padding: 0;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  body{
+    height:auto;
+  }
+  .App {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: 400px 400px 400px 400px;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    height:auto;
+    padding: 40px 0;
+  }
+  .App {
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+  }
+}
+```
